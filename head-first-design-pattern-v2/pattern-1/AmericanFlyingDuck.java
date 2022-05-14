@@ -1,10 +1,8 @@
 public class AmericanFlyingDuck extends Duck {
-	public FlyBehavior getFlyBehavior() {
-		return new FlyWithWings();
-	}
-
-	public QuackBehavior getQuackBehavior() {
-		return new Quack();
+	
+	public AmericanFlyingDuck() {
+		quackBehavior = new Quack();
+		flyBehavior = new FlyWithWings();
 	}
 	
 	public void displayDuck() {

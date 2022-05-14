@@ -1,12 +1,10 @@
 public class WoodenDuck extends Duck {
-	public FlyBehavior getFlyBehavior() {
-		return new FlyNoWay();
+	
+	public WoodenDuck() {
+		quackBehavior = new MuteQuack();
+		flyBehavior = new FlyNoWay();
 	}
 
-	public QuackBehavior getQuackBehavior() {
-		return new MuteQuack();
-	}
-	
 	public void displayDuck() {
 		System.out.println("Display: This is a wooden duck ...");
 	}

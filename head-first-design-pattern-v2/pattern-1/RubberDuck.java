@@ -1,10 +1,8 @@
 public class RubberDuck extends Duck {
-	public FlyBehavior getFlyBehavior() {
-		return new FlyNoWay();
-	}
-
-	public QuackBehavior getQuackBehavior() {
-		return new Squeak();
+	
+	public RubberDuck() {
+		quackBehavior = new Squeak();
+		flyBehavior = new FlyNoWay();
 	}
 	
 	public void displayDuck() {

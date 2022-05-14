@@ -1,10 +1,8 @@
 public class IndianHomeDuck extends Duck {
-	public FlyBehavior getFlyBehavior() {
-		return new FlyNoWay();
-	}
 
-	public QuackBehavior getQuackBehavior() {
-		return new Quack();
+	public IndianHomeDuck() {
+		quackBehavior = new Quack();
+		flyBehavior = new FlyNoWay();
 	}
 	
 	public void displayDuck() {

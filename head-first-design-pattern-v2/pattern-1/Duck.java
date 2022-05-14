@@ -1,6 +1,16 @@
 public abstract class Duck {
-	protected abstract FlyBehavior getFlyBehavior();
-	protected abstract QuackBehavior getQuackBehavior();
+
+	protected FlyBehavior flyBehavior;
+	protected QuackBehavior quackBehavior;
+
+	public void performFlyBehavior() {
+		flyBehavior.fly();
+	}
+
+	public void  performQuackBehavior() {
+		quackBehavior.quack();
+	}
+
 	protected abstract void displayDuck();
 
 	//common duck methods (encapsulated)
