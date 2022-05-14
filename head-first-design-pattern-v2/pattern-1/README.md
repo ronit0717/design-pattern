@@ -1,5 +1,7 @@
 ### File Structure
 
+Main Class: SimuDuckApp.java  
+
 There are 4 types of Duck: IndianHomeDuck, AmericanFlyingDuck, RubberDuck, WoodenDuck
 
 Duck.java (superclass)   
@@ -7,6 +9,7 @@ Duck.java (superclass)
     |--> AmericanFlyingDuck.java  
     |--> RubberDuck.java  
     |--> WoodenDuck.java  
+    |--> ModelDuck.java  
     
 QuackBehavior.java (Interface)  
     |--> Quack.java  
@@ -16,3 +19,4 @@ QuackBehavior.java (Interface)
 FlyBehavior.java (Interface)  
     |--> FlyNoWay.java   
     |--> FlyWithWings.java  
+    |--> FlyWithRocket.java  
