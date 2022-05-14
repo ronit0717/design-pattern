@@ -34,6 +34,20 @@ public class SimuDuckApp {
 		duck4.performQuackBehavior();
 		System.out.println();
 
+		//run time behavior change example
+		Duck duck5 = new ModelDuck();
+		duck5.displayDuck();
+		duck5.getHasWings();
+		duck5.getNumberOfLegs();
+		duck5.performFlyBehavior();
+		duck5.performQuackBehavior();
+		System.out.println("Changing runtime behavior");
+
+		FlyBehavior fb = new FlyWithRocket();
+		duck5.setFlyBehavior(fb);
+		duck5.performFlyBehavior();
+		System.out.println();		
+
 		System.out.println("Ending SimuDuckApp...");
 	}
 }
